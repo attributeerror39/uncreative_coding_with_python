@@ -7,5 +7,9 @@ chapters:
 - file: setup_environment
 - file: first_book
 - file: for_loop
-- file: enumerate
 - file: read_text_file
+- file: enumerate
+- file: ref_data_types
+- file: ref_loops
+- file: ref_lists
+- file: ref_strings

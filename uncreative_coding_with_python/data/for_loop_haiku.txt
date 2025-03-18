@@ -1,0 +1,3 @@
+Iterate and count,
+Loop through tasks with steady play,
+End when done repeating.
