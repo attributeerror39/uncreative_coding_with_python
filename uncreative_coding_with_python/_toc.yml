@@ -5,10 +5,12 @@ format: jb-book
 root: intro
 chapters:
 - file: setup_environment
+- file: basics
 - file: first_book
 - file: for_loop
 - file: read_text_file
 - file: enumerate
+- file: functions
 - file: ref_data_types
 - file: ref_loops
 - file: ref_lists
