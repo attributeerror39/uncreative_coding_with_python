@@ -65,7 +65,7 @@ Open Anaconda Navigator
 
 Click on `Environemnts` in the left pane, then click `create`
 
-Type a name, like `pyfyi` and the environment will be created
+Type a name, like `fpdf2` and the environment will be created
 
 Click on the `play` button right to the environment, open a terminal and type
 
