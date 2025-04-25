@@ -21,31 +21,26 @@ After installation, go to the `Extensions`-tab and install the following extensi
 
 It is recommended to create a virtual environment for your project/ setup. All the libraries and dependencies installed for this project are isolated and won't conflict other libraries and their dependencies. The easiest way to create a virtual environment is **conda**.
 
-[Anaconda or Miniconda?](https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html#anaconda-or-miniconda) 
-
-The main difference is that Anaconda has a GUI to manage/ start environments. In addition more libraries are installed than with miniconda. **Miniconda is controlled through the CLI, which is faster and lighter. It's also enough when working from within VSCode.**
-
 ### Miniconda
 
-[Download](https://www.anaconda.com/docs/getting-started/miniconda/install) Miniconda for your OS and execute the installer. (The easiest way is the [CLI Installation](https://www.anaconda.com/docs/getting-started/miniconda/install#quickstart-install-instructions).)
+[Download](https://www.anaconda.com/download/success#miniconda) Miniconda for your OS and execute the installer. 
 
-Open the Terminal inside VSCode: `View` -> `Terminal` and type the following commands, line by line, execute each one of them with pressing `Enter`.
+Open the Terminal inside VSCode: `Terminal` -> `New Terminal` and type the following commands, line by line, execute each one of them with pressing `Enter`.
 
 ``` shell
 # check if conda is installed
 conda --version
 ```
 
-#### Create a new environment
-
-Change the name `<my_environment>` in the code below to a name of your choice. (It's common that variable values inside code snippets are enclosed by `<` and `>`, like below. If so, replace the name *inclusive* `< >` with a name of your choice.) This is the name of your environment and you have to type it when you start it later on, so make sure it's not too long and easy to remember.
+### Create a new environment
 
 ``` shell
-# create a new environment with Python version 3.12
-conda create -n <my_environment> python=3.12 -y
-# for example: 
-# conda create -n uncreativepython python=3.12 -y
+# create a new environment called "up" with Python version 3.12
+conda create -n up python=3.12 -y
 ```
+
+The word after the `-n` flag (in this case "up") is the name of your environment and you have to type it when you start it later on, so make sure it's not too long and easy to remember.
+
 
 You can see all environments created by you with the following command:
 
@@ -54,11 +49,11 @@ You can see all environments created by you with the following command:
 conda env list
 ```
 
-Next we can activate our newly created environment. (Of course you have to insert your environments name in the place of `<my_environment>`.)
+Next we can activate our newly created environment.
 
 ```shell
 # activate your environment
-conda activate <my_environment>
+conda activate up
 ```
 
 ### Install external packages with pip
@@ -67,7 +62,7 @@ We can use Python's package installer **pip** to install external libraries like
 
 ```shell
 # important: activate your environment first
-conda activate <my_environment>
+conda activate up
 
 # install the library fpdf2 with pip
 pip install fpdf2
