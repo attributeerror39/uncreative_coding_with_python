@@ -11,6 +11,8 @@ chapters:
 - file: read_text_file
 - file: enumerate
 - file: functions_1
+- file: images
+
 # - file: ref_data_types
 # - file: ref_loops
 # - file: ref_lists
