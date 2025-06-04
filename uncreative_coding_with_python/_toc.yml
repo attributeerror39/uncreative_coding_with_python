@@ -13,6 +13,7 @@ chapters:
 - file: functions_1
 - file: images
 - file: images_pdf
+- file: qr
 
 # - file: ref_data_types
 # - file: ref_loops
